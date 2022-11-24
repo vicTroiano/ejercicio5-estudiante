@@ -4,6 +4,12 @@ public class Materia {
     private String nombre;
     private ArrayList<Profesor> profesores;
     private ArrayList<Curso> cursos;
+
+    //metodo agregar curso a materia
+    public void agregarCurso(Curso curso) {
+        getCursos().add(curso);
+    }
+
     //constructor
     public Materia(String nombre){
         this.nombre = nombre;
